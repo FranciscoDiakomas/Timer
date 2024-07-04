@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer-Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Temporizador</h1>
+            <input type="number" placeholder="Minutos" id="input" autofocus>
+            <div class="roda" id="roda">
+                <div class="rainterna" id="rainterna">
+                    <h1 id="tempo">
+                        <span id="minutos">30</span>:<span id="segundos">00</span></h1>
+                </div>
+            </div>
+            <div class="btns">
+                <button class="start" id="start">Começar</button>
+                <button id="Pausar">Pausar</button>
+                <button class="restart" id="restart">Recomeçar</button>
+            </div>
+        </article>
+        <aside>
+            <div>
+                <h1>ALARME</h1>
+                <button id="closeModal">Fechar</button>
+            </div>
+            
+        </aside>
+    </main>
+</body>
+</html>

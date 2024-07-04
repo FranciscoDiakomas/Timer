@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(rgba(13, 125, 173, 0.789),rgba(5, 5, 152, 0.822));
+    padding: 100px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background-color: rgb(7, 34, 42);
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+ color: white;
+}
+
+button{
+   padding: 10px 12px;
+   font-size: 12pt;
+   border: transparent;
+   background-color: rgba(240, 30, 30, 0.858);
+   color: white;
+   border: transparent;
+   border-radius: 8px;
+}
+.roda{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: conic-gradient(rgb(0, 106, 255) 360deg,rgb(0, 200, 255) 0deg);
+    animation: pulsar 3s ease infinite;
+    transition: transform ease .5s;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+h1{
+    font-size: 32pt;
+}
+input{
+    width: 100%;
+    height: 40px;
+    font-size: 15pt;
+}
+button{
+    transition: transform ease .5s ;
+}
+button:active{
+    transform: translateY(5px);
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+@keyframes pulsar {
+    0%{
+        transform: scale(0.97);
+        box-shadow: 0 0 0 0 rgba(52, 128, 138, 0.595);
+    }
+    50%{
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(8, 74, 93, 0.21);
+    }
+    100% {
+             transform: scale(0.97);
+             box-shadow: 0 0 0 0 rgba(3, 42, 53, 0.429);
+         }
+    
+}
+.rainterna{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 50%;
+    background-color: rgb(7, 34, 42);
+    font-size: 22pt;
+}
+aside{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    visibility: hidden;
+}
+aside > div{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    gap: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+.start{
+    background-color: green;
+}
+.restart{
+    background-color: rgb(167, 167, 6);
+}
+
+@media screen  and (max-width : 700px){
+    aside>div {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            gap: 25px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+            background-color: rgb(7, 34, 42);
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            color: white;
+        }
+                input {
+                    width: 90%;
+                    height: 40px;
+                    font-size: 15pt;
+                }
+        .roda {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: conic-gradient(rgb(0, 106, 255) 360deg, rgb(0, 200, 255) 0deg);
+            animation: pulsar 3s ease infinite;
+            transition: transform ease .5s;
+            margin-bottom: 50px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+    
+}
+
+@media screen and (max-width : 400px) {
+    aside>div {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 25px;
+        background-color: white;
+        border-radius: 5px;
+    }
+        input {
+            width: 80%;
+            height: 40px;
+            font-size: 15pt;
+        }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        background-color: rgb(7, 34, 42);
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        color: white;
+    }
+        .roda {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: conic-gradient(rgb(0, 106, 255) 360deg, rgb(0, 200, 255) 0deg);
+            animation: pulsar 3s ease infinite;
+            transition: transform ease .5s;
+            margin-bottom: 50px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+}
